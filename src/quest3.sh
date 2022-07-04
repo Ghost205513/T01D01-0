@@ -1,29 +1,21 @@
 #!/bin/bash
 
-mkdir door_management_files
+mv door_management_fi door_management_files
 cd door_management_files
+
 mkdir door_configuration
-cd door_configuration
-
-for i in {1..10}
-do
-    echo 1 > a$i.conf
-done
-
-cd ..
 mkdir door_map
-cd door_map
-echo 1 > door_map_1.1
-cd ..
 mkdir door_logs
-cd door_logs
 
-for i in {1..23}
+for i in {1..16}
 do
-    echo 1 > a$i.log
+    mv ./door_$i.conf ./door_configuration/
+    mv ./door_$i.log ./door_logs/
 done
 
-cd ..
+mv ./door_map_1.1 ./door_map/
+mv ./door_21.conf ./door_configuration/
+
 cd ..
 
 chmod 777 ./ai_door_control.sh
