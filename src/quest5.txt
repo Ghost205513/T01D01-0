@@ -1,0 +1,7 @@
+cd ./door_management_files/door_configuration/
+nano door_1.conf
+
+CLOSED -> OPEN
+^O
+ENTER
+^X
