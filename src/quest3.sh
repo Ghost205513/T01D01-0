@@ -19,3 +19,5 @@ mv ./door_21.conf ./door_configuration/
 cd ..
 
 chmod 777 ./ai_door_control.sh
+
+bash ./ai_door_management_module.sh
