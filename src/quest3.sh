@@ -27,5 +27,5 @@ cd ..
 cd ..
 
 chmod 777 ./ai_door_control.sh
-
 bash ./ai_door_management_module.sh
+
